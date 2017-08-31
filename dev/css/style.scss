@@ -1,0 +1,86 @@
+$MColour : white;
+$FF : 'ventana';
+
+html, body, #app {
+    height: 100%;
+    width: 100%;
+    font-family: $FF;
+    background-color: $MColour;
+  transition: transform 1s ease;
+}
+
+.container {
+position: relative;
+}
+.component-appear.component-appear-active {
+  left: 0px;
+  transition: left 0.5s ease;
+}
+.component-appear{
+  left: 100% ;
+}
+
+button {
+    background: red none repeat scroll 0 0;
+    color: white;
+    border: 0 none;
+    height: 22px;
+    text-align: center;
+    width: 40px;
+}
+.datepicker {
+  position: relative;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  width: 1000px;
+}
+ul.heading {
+  border-bottom: 3px solid #c7c0c0;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  font-weight: 700;
+}
+li {
+  flex: 1 1 0;
+  list-style: outside none none;
+  text-align: center;
+}
+.updateCancel {
+  display: flex;
+  text-decoration: underline;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}
+.updateCancel span {
+  margin-right: 5px ;
+}
+textarea {
+  resize: vertical;
+  padding-top: 5px;
+}
+.notEditing input,.notEditing textarea {
+  border: none;
+  overflow: auto;
+  outline: none;
+  resize: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.user {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background: green;
+}
+.userContainer {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+  align-items: center;
+}
